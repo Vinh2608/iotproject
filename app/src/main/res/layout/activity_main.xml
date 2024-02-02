@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@drawable/rounded_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="55sp"
+                android:text="25°C"
+                android:gravity="center_vertical">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="Luminance: 75%"
+                android:gravity="center_vertical">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="Humidity: 75%"
+                android:gravity="center_vertical">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.example.smarthomeapp.DeviceFragment"
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:layout_marginVertical="10dp">
+    </androidx.fragment.app.FragmentContainerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/mic_bttn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="Mic Button"
+            android:src="@drawable/baseline_mic_24">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    </LinearLayout>
+</LinearLayout>

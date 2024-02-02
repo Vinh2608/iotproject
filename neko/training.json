@@ -1,0 +1,16 @@
+{
+    "query":[
+        "show", "get", "what", "tell", "query", "temperature", "condition"
+    ],
+    "chat":[
+        "initiate chat", "gpt", "start chat gpt", "GPT", "start chat GPT",
+        "chat gpt", "chat GPT", "chat"
+    ],
+    "ctrl":[
+        "turn", "fan", "on", "off", "get", "level", "mode", "one", 
+        "two", "three", "four", "max", "zero"
+    ],
+    "ai":[
+        "ai", "AI", "recognition", "face", "stranger", "anyone", "camera"
+    ]
+}
