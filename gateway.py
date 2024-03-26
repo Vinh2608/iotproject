@@ -6,7 +6,7 @@ from  Adafruit_IO import  MQTTClient
 
 AIO_FEED_ID = ['den', 'quat']
 AIO_USERNAME = "RegL"
-AIO_KEY = "aio_Iqog49d74jBc1HiomQvEupTn4wNv"
+AIO_KEY = "aio_luIs92FDIivtMiO1A62esa34l7yD"
 
 def connected(client):
     for top in AIO_FEED_ID:
@@ -97,7 +97,7 @@ client.loop_background()
 #### MAIN ########
 while True:
     # readSerial()
-    light = random.randint(0, 100)
+    #light = random.randint(0, 100)
     temp = random.randint(0, 40)
     client.publish("cambien-as", light) # update light
     client.publish("cambien-nhiet", temp) # update temp
