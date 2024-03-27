@@ -9,6 +9,8 @@ import androidx.core.app.ActivityCompat;
 
 import info.mqtt.android.service.MqttAndroidClient;
 import info.mqtt.android.service.Ack;
+
+//import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
@@ -23,11 +25,11 @@ public class MQTTHelper {
     public MqttAndroidClient mqttAndroidClient;
 
     public final String[] arrayTopics = {"RegL/feeds/den", "RegL/feeds/quat", "RegL/feeds/cambien-nhiet",
-                                        "RegL/feeds/cambien-as", "RegL/feeds/ai"};
+                                        "RegL/feeds/cambien-as", "RegL/feeds/ai", "RegL/feeds/image"};
 
     final String clientId = "";
     final String username = "RegL";
-    final String password = "aio_Iqog49d74jBc1HiomQvEupTn4wNv";
+    final String password = "aio_OdjH53bqgD9kUnBm30qSLyFPHraT";
 
     final String serverUri = "tcp://io.adafruit.com:1883";
 
